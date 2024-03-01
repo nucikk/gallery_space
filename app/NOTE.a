@@ -1,0 +1,62 @@
+- CODE PLANNING -
+
+//NOTE - Solution Planning ==============================   
+
+1. Linking and Navigating  
+
+//REVIEW -  მთავარი გვერდი:
+  -# Photo Display: 20 ფოტოს კოლექციის ჩვენება
+  -# Search Input: დინამიური ძიების ფუნქციების ინტეგრირება სურათების განახლებისთვის
+  -# ქეშირების მექანიზმის გამოყენება (მონაცემების ჩვენება ქეშიდან)
+//TODO - 1. show image   2. input handling   3. caching logic
+
+
+//REVIEW -  ისტორის გვერდი:
+  -# saearch history display: ძიების ისტორიის ჩვენება
+  -# show photo name: საძიებო ტერმინზე დაჭერისას უნდა გამოჩნდეს შესაბამისი სურათები
+  -# infinite scroll გამოყენება 
+//TODO -  1. display searched photos   2. show photo    3. infinit scroll
+
+
+//SECTION - Image Modal:
+   -# full image display: ფოტოების სრული ვერსიის ჩვენება
+   -# statistical information: ჩამოტვირთვის რაოდენობის, ნახვების, მოწონებების ჩვენება მოდალურ ფანჯარაში სურათზე დაწკაპუნებისას
+ //TODO -  1. Show full image  2. display statistics
+
+
+
+//NOTE - 2. Test Plan ==============================    
+
+//REVIEW -  მთავარი გვერდი:
+  -?  შემოწმება 20 ყველაზე პოპულარული სურათი თავდაპირველად არის ნაჩვენები თუ არა
+  -?  შემოწმება ძიების ფუნქცია სხვადასხვა საძიებო ტერმინებით
+  -?  ქეშირების მუშაობის შემოწმება უკვე გამოყენებული ტერმინების ძიებით 
+
+//REVIEW -  ისტორის გვერდი:
+  -?  შემოწმება, რომ ყველა საძიებო სიტყვა ჩამოთვლილია
+  -?  შემოწმება თითოეულ ტერმინზე გამოჩნდება თუ არა შესაბამისი სურათები
+  -?  სქროლის შემოწმება
+
+  -? Image Modal: full version, download count, views, likes
+
+//NOTE - 3. PsuedoCode ==============================   
+
+კომპონენტები:
+  -# მთავარი გვერდი:
+  fetchPopularImages -   ყველაზე პოპულარული სურათების მიღება 
+  searchImages   -       სურათების მიღება საძიებო ტერმინით
+  handleInfiniteScroll -  სქროლის ფუნქცია
+ ?? handleSearch - ძიების ფუნქცია ??
+
+  -# ისტორის გვერდი:
+  fetchSearchHistory   -  ძიების ისტორიის მიღება
+  fetchImagesByTerm  -   სურათების მოძიება არჩეული საძიებო ტერმინით
+  handleHistoryInfiniteScroll -  სქროლის ფუნქცია
+??  handleHistorySearch - ძიების ფუნქცია  ??
+
+  -# Image Modal: fetchImageDetails  - ფოტოზე დაჭერისას უნდა გამოჩნდეს სურათის დეტალები (download count, views, likes)
+
+
+=== DONE === 
+
+//1. linking and navigating navbar 

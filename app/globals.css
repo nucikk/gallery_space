@@ -1,0 +1,12 @@
+@import 'reset-css';
+
+*{
+ font-family: monospace !important;  
+ letter-spacing: 1px;
+}
+
+
+a{
+  text-decoration: none;
+  color: #393939d8;
+}

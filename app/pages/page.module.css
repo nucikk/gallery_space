@@ -1,0 +1,26 @@
+/* add header style  */
+.header {
+  height: 60px;
+  box-shadow: 0 6px 14px #0000001a;
+}
+
+.navigation {
+  display: flex;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  padding: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.active {
+  color: #000;
+  font-weight: 900;
+}
