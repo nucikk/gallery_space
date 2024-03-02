@@ -1,7 +1,13 @@
 import React from 'react'
+import GetFetchImages from './GetFetchImages'
 
 const Page = () => {
-  return <p>Home Page</p>
+  return (
+   <>
+     <GetFetchImages />
+   </>
+    
+  )
 
 }
 

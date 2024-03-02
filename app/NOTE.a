@@ -43,7 +43,7 @@
 
 კომპონენტები:
   -# მთავარი გვერდი:
-  fetchPopularImages -   ყველაზე პოპულარული სურათების მიღება 
+  GetfetchImages -   ყველაზე პოპულარული სურათების მიღება 
   searchImages   -       სურათების მიღება საძიებო ტერმინით
   handleInfiniteScroll -  სქროლის ფუნქცია
  ?? handleSearch - ძიების ფუნქცია ??

@@ -4,10 +4,6 @@
   box-shadow: 0 6px 14px #0000001a;
 }
 
-.navigation {
-  display: flex;
-}
-
 .list {
   display: flex;
   justify-content: center;
